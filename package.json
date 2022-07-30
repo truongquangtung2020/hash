@@ -1,11 +1,11 @@
 {
-  "name": "tosh",
-  "version": "2.0.0",
+  "name": "hash",
+  "version": "1.0.0",
   "main": "app.js",
   "license": "BSD-3-Clause",
   "description": "text-based editor for Scratch projects",
-  "repository": "https://github.com/tjvr/tosh",
-  "author": "Tim Radvan <tim@tjvr.org>",
+  "repository": "https://github.com/truongquangtung2020/hash",
+  "author": "ScrOTech <https://scratch.mit.edu/users/Truongquangtung123>",
   "browser": "index.js",
   "scripts": {
     "test": "jest",
