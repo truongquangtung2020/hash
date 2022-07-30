@@ -129,13 +129,13 @@ spriteList.on("selection change", e => {
 const mb = new MenuBar({
   target: app,
   spec: [
-    ["tosh", () => open("/")],
+    ["hash", () => open("/")],
     [
       "File",
       [
-        ["Open", "openProject", { key: "#o" }],
-        ["Import from Scratch…", "importProject", { key: "#i", enabled: false }],
-        ["Save", "saveProject", { key: "#s" }],
+        ["open", "openProject", { key: "#o" }],
+        ["import from Scratch…", "importProject", { key: "#i", enabled: false }],
+        ["save", "saveProject", { key: "#s" }],
       ],
     ],
     [
@@ -164,20 +164,20 @@ const mb = new MenuBar({
         menu: () =>
           new Menu({
             spec: [
-              ["Run", "flagClick", { key: "#Enter", enabled: true }],
-              ["Stop", "leavePlayer", { key: "Escape", enabled: player.isRunning }],
+              ["run", "flagClick", { key: "#Enter", enabled: true }],
+              ["stop", "leavePlayer", { key: "Escape", enabled: player.isRunning }],
             ],
           }),
       },
     ],
     [
-      "Help",
+      "help",
       [
-        ["Guide", () => openInTab("/help/guide/")],
-        ["Tips", () => openInTab("/help/tips/")],
-        ["List of Blocks", () => openInTab("/help/blocks/")],
+        ["guide", () => openInTab("/help/guide/")],
+        ["tips", () => openInTab("/help/tips/")],
+        ["list of Blocks", () => openInTab("/help/blocks/")],
         "-",
-        ["Send Feedback", () => openInTab("https://github.com/tjvr/tosh2/issues")],
+        ["send Feedback", () => openInTab("https://github.com/tjvr/tosh2/issues")],
       ],
     ],
   ],
